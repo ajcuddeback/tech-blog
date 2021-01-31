@@ -85,6 +85,31 @@ router.post('/login', (req, res) => {
             console.log(err);
             res.status(500).json(err);
         })
+});
+
+router.post('/logout', (req, res) => {
+
+});
+
+router.put('/:id', (req, res) => {
+    User.update(req.body, {
+        individualHooks: true,
+        where: {
+            id: req.params.id
+        }
+    })
+        .then(dbUserData => {
+            if (!dbUserData) {
+                res.status(404).json({ message: 'No user found at this id!' });
+                return;
+            }
+
+            res.json(dbUserData);
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(500).json(err);
+        })
 })
 
 
