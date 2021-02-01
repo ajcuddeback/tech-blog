@@ -137,7 +137,8 @@ header nav button {
 .edit-post-btn,
 .add-post-btn,
 .delete-post-btn,
-.save-post-btn {
+.save-post-btn,
+.create-btn {
   background-color: #682c0e;
   color: #e9dcc3;
   padding: 0.5rem;
@@ -146,7 +147,8 @@ header nav button {
 .dashboard-wrapper section ol li {
   margin-bottom: 5rem;
 }
-.edit-post {
+.edit-post,
+.add-post {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -163,12 +165,14 @@ header nav button {
   font-size: 2rem;
   border-radius: 5px;
 }
-.edit-post h2 {
+.edit-post h2,
+.add-post h2 {
   color: #682c0e;
   font-size: 2rem;
   margin-bottom: 2rem;
 }
-.edit-post-form div {
+.edit-post-form div,
+.add-post div {
   display: flex;
   flex-direction: column;
 }
@@ -193,4 +197,8 @@ header nav button {
 .delete-post-btn {
   margin-top: 1rem;
   background: red;
+}
+.create-btn {
+  margin-top: 0.5rem;
+  width: 100%;
 }
