@@ -9,7 +9,7 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const app = express();
 
 const sess = {
-    secret: 'secret#158768156bdiue5',
+    secret: 'Super secret secret',
     cookie: {},
     resave: false,
     saveUninitialized: true,
@@ -18,10 +18,12 @@ const sess = {
     })
 };
 
+app.use(session(sess));
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(routes);
-app.use(session(sess));
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 const hbs = exphbs.create({});
