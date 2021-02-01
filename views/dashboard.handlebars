@@ -1,0 +1,16 @@
+<h2><a href="/dashboard">{{user.username}}'s Dashboard</a></h2>
+{{#if posts.length}}
+<section>
+    <h2>Your posts</h2>
+    <ol>
+        {{#each posts as |post|}}
+        <li>
+            {{> post-info post}}
+            <a href="/dashboard/edit/{{post.id}}">Edit Post</a>
+        </li>
+        {{/each}}
+    </ol>
+</section>
+{{/if}}
+
+<a href="/dashboard/add">Add a post</a>

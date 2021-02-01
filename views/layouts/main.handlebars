@@ -11,9 +11,12 @@
 <header>
     <h1><a href="/">&#60;Tech Blog&#47;&#62;</a></h1>
     <nav>
+        {{#if loggedIn}}
         <a href="/dashboard">Dashboard</a>
         <button id="logout">Logout</button>
+        {{else}}
         <a href="/login">Login</a>
+        {{/if}}
     </nav>
 </header>
 
