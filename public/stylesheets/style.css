@@ -16,6 +16,10 @@ button:hover {
   cursor: pointer;
 }
 
+ol {
+  list-style: none;
+}
+
 header {
   width: 100%;
   background-color: #682c0e;
@@ -110,4 +114,33 @@ header nav button {
 }
 .comment {
   margin-top: 1rem;
+}
+.dashboard-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.dashboard-wrapper h2 a {
+  color: #682c0e;
+  margin-top: 1rem;
+  font-size: 3rem;
+}
+.dashboard-wrapper section {
+  margin-top: 3rem;
+}
+.dashboard-title {
+  text-align: center;
+  color: #682c0e;
+  font-size: 2rem;
+}
+.edit-post-btn,
+.add-post-btn {
+  background-color: #682c0e;
+  color: #e9dcc3;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.dashboard-wrapper section ol li {
+  margin-bottom: 5rem;
 }
