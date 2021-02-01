@@ -3,10 +3,11 @@
     <h2>Edit post</h2>
     <form class="edit-post-form">
         <div>
-            <input name="post-title" type="text" value="{{post.title}}" />
+            <input name="post-title" id="post-title" type="text" value="{{post.title}}" />
             <textarea name="post-text" id="post-text">{{post.text}}</textarea>
         </div>
         <button type="submit">Save post</button>
         <button type="button" class="delete-post-btn">Delete post</button>
     </form>
 </section>
+<script src="/javascript/edit-post.js"></script>
