@@ -78,7 +78,8 @@ header nav button {
   border: 3px solid #682c0e;
   border-radius: 5px;
   padding: 1rem;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 .comment-wrapper {
   text-align: right;
