@@ -78,6 +78,7 @@ header nav button {
   border: 3px solid #682c0e;
   border-radius: 5px;
   padding: 1rem;
+  overflow: scroll;
 }
 .comment-wrapper {
   text-align: right;
@@ -312,8 +313,11 @@ footer {
     justify-content: center;
     align-items: center;
   }
+  .post-text {
+    height: 13rem;
+  }
 }
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 400px) {
   .title-wrapper,
   .post-text,
   .single-post-wrapper {
