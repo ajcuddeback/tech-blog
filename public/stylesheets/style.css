@@ -135,7 +135,9 @@ header nav button {
   font-size: 2rem;
 }
 .edit-post-btn,
-.add-post-btn {
+.add-post-btn,
+.delete-post-btn,
+.save-post-btn {
   background-color: #682c0e;
   color: #e9dcc3;
   padding: 0.5rem;
@@ -143,4 +145,52 @@ header nav button {
 }
 .dashboard-wrapper section ol li {
   margin-bottom: 5rem;
+}
+.edit-post {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.back-btn-wrapper {
+  margin-top: 1rem;
+}
+.back-btn {
+  margin-left: 1rem;
+  padding: 0.5rem;
+  background-color: #682c0e;
+  color: #e9dcc3;
+  font-size: 2rem;
+  border-radius: 5px;
+}
+.edit-post h2 {
+  color: #682c0e;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.edit-post-form div {
+  display: flex;
+  flex-direction: column;
+}
+#post-title {
+  padding: 0.5rem;
+  width: 20rem;
+  margin-bottom: 1rem;
+  color: #682c0e;
+  background-color: #e9dcc3;
+  border-radius: 5px;
+}
+#post-text {
+  padding: 0.5rem;
+  height: 5rem;
+  color: #682c0e;
+  background-color: #e9dcc3;
+  border-radius: 5px;
+}
+.save-post-btn {
+  margin-top: 0.5rem;
+}
+.delete-post-btn {
+  margin-top: 1rem;
+  background: red;
 }
