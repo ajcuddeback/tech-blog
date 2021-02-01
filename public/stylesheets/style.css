@@ -138,7 +138,8 @@ header nav button {
 .add-post-btn,
 .delete-post-btn,
 .save-post-btn,
-.create-btn {
+.create-btn,
+.submit-login {
   background-color: #682c0e;
   color: #e9dcc3;
   padding: 0.5rem;
@@ -201,4 +202,38 @@ header nav button {
 .create-btn {
   margin-top: 0.5rem;
   width: 100%;
+}
+
+.login-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login-wrapper h2 {
+  color: #682c0e;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+#login-form div label {
+  display: block;
+  margin-top: 1rem;
+  color: #682c0e;
+  font-size: 1.2rem;
+}
+#login-form div input {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  color: #682c0e;
+}
+.submit-login {
+  margin-top: 1rem;
+  width: 100%;
+}
+.create-account-wrapper {
+  margin-top: 1rem;
+}
+.create-account-wrapper {
+  color: rgb(95, 11, 95);
+  font-size: 1rem;
 }
