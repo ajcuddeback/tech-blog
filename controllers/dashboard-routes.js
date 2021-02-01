@@ -37,7 +37,9 @@ router.get('/', (req, res) => {
 });
 
 router.get('/add', (req, res) => {
-    res.render('add-post');
+    res.render('add-post', {
+        loggedIn: req.session.loggedIn
+    });
 });
 
 router.get('/edit/:id', (req, res) => {
