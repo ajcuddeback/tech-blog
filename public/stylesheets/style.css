@@ -139,7 +139,8 @@ header nav button {
 .delete-post-btn,
 .save-post-btn,
 .create-btn,
-.submit-login {
+.submit-login,
+.submit-signup {
   background-color: #682c0e;
   color: #e9dcc3;
   padding: 0.5rem;
@@ -204,29 +205,34 @@ header nav button {
   width: 100%;
 }
 
-.login-wrapper {
+.login-wrapper,
+.signup-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.login-wrapper h2 {
+.login-wrapper h2,
+.signup-wrapper h2 {
   color: #682c0e;
   font-size: 2rem;
   margin-bottom: 1rem;
 }
-#login-form div label {
+#login-form div label,
+#signup-form div label {
   display: block;
   margin-top: 1rem;
   color: #682c0e;
   font-size: 1.2rem;
 }
-#login-form div input {
+#login-form div input,
+#signup-form div input {
   margin-top: 0.5rem;
   padding: 0.5rem;
   color: #682c0e;
 }
-.submit-login {
+.submit-login,
+.submit-signup {
   margin-top: 1rem;
   width: 100%;
 }
